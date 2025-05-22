@@ -1,0 +1,11 @@
+query GetFullProfile($userId: String!) {
+  getLogin(data: { userId: $userId }) {
+    login
+  }
+  getProfile(userId: $userId) {
+    about
+    avatarUrl
+    subscriptions
+    subscribersCount
+  }
+}

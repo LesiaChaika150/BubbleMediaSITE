@@ -1,0 +1,8 @@
+query GetShortProfile($userId: String!) {
+  getLogin(data: { userId: $userId }) {
+    login
+  }
+  getAvatar(userId: $userId) {
+    avatarUrl
+  }
+}

@@ -1,0 +1,7 @@
+mutation UpdateAbout($data: UpdateAboutInput!) {
+  updateAbout(data: $data)
+}
+
+mutation UpdateAvatar($data: UpdateAvatarInput!) {
+  updateAvatar(data: $data)
+}

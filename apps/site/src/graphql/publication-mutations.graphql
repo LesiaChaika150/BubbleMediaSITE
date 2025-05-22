@@ -1,0 +1,35 @@
+mutation UploadVideo($uploadVideoInput: UploadVideoInput!) {
+  uploadVideo(uploadVideoInput: $uploadVideoInput)
+}
+
+mutation UploadAudio($uploadAudioInput: UploadAudioInput!) {
+  uploadAudio(uploadAudioInput: $uploadAudioInput)
+}
+
+mutation UploadPhoto($uploadPhotoInput: UploadPhotoInput!) {
+  uploadPhoto(uploadPhotoInput: $uploadPhotoInput)
+}
+
+mutation ChangeVideo($changeVideoInput: ChangeVideoInput!) {
+  changeVideo(changeVideoInput: $changeVideoInput)
+}
+
+mutation ChangeAudio($changeAudioInput: ChangeAudioInput!) {
+  changeAudio(changeAudioInput: $changeAudioInput)
+}
+
+mutation ChangePhoto($changePhotoInput: ChangePhotoInput!) {
+  changePhoto(changePhotoInput: $changePhotoInput)
+}
+
+mutation DeleteVideo($data: DeleteContentInput!) {
+  deleteVideo(data: $data)
+}
+
+mutation DeleteAudio($data: DeleteContentInput!) {
+  deleteAudio(data: $data)
+}
+
+mutation DeletePhoto($data: DeleteContentInput!) {
+  deletePhoto(data: $data)
+}

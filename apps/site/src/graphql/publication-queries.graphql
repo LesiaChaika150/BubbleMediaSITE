@@ -1,0 +1,43 @@
+query GetVideo($getContentByIdInput: String!) {
+  getVideo(getContentByIdInput: $getContentByIdInput) {
+    publicationId
+    userId
+    publicationName
+    about
+    tegs
+    videoUrl
+    coverUrl
+    createdAt
+  }
+}
+
+query GetAudio($getContentByIdInput: String!) {
+  getAudio(getContentByIdInput: $getContentByIdInput) {
+    publicationId
+    userId
+    publicationName
+    about
+    tegs
+    audioUrl
+    coverUrl
+    createdAt
+  }
+}
+
+query GetPhoto($getContentByIdInput: String!) {
+  getPhoto(getContentByIdInput: $getContentByIdInput) {
+    publicationId
+    userId
+    publicationName
+    about
+    tegs
+    photoUrl
+    createdAt
+  }
+}
+
+query GetTotalLikes($data: GetLikesRequestDto!) {
+  getTotalLikes(data: $data) {
+    total
+  }
+}

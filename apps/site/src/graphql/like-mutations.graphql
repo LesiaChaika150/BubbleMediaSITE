@@ -1,0 +1,7 @@
+mutation AddLike($data: LikeRequestDto!) {
+  addLike(data: $data)
+}
+
+mutation RemoveLike($data: LikeRequestDto!) {
+  removeLike(data: $data)
+}

@@ -1,0 +1,69 @@
+query GetUserPublications($input: GetUserPublicationsInput!) {
+  GetUserPublications(input: $input) {
+    publications {
+      publicationId
+      userId
+      login
+      avatarUrl
+      publicationName
+      coverUrl
+      type
+    }
+  }
+}
+
+query GetRecentTopPosts($input: GetRecentTopPostsInput!) {
+  GetRecentTopPosts(input: $input) {
+    publications {
+      publicationId
+      userId
+      login
+      avatarUrl
+      publicationName
+      coverUrl
+      type
+    }
+  }
+}
+
+query GetLikedPublications($input: GetLikedPublicationsInput!) {
+  GetLikedPublications(input: $input) {
+    publications {
+      publicationId
+      userId
+      login
+      avatarUrl
+      publicationName
+      coverUrl
+      type
+    }
+  }
+}
+
+query GetRandomPublications($input: GetRandomPublicationsInput!) {
+  GetRandomPublications(input: $input) {
+    publications {
+      publicationId
+      userId
+      login
+      avatarUrl
+      publicationName
+      coverUrl
+      type
+    }
+  }
+}
+
+query GetSubscriptionsPublications($input: GetSubscriptionsPublicationsInput!) {
+  GetSubscriptionsPublications(input: $input) {
+    publications {
+      publicationId
+      userId
+      login
+      avatarUrl
+      publicationName
+      coverUrl
+      type
+    }
+  }
+}

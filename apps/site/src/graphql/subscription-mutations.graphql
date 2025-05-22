@@ -1,0 +1,7 @@
+mutation AddSubscription($data: AddSubscriptionInput!) {
+  addSubscription(data: $data)
+}
+
+mutation RemoveSubscription($data: RemoveSubscriptionInput!) {
+  removeSubscription(data: $data)
+}

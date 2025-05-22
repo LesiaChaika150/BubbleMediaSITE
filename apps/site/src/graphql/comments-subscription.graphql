@@ -1,0 +1,7 @@
+subscription SubscribeToPublicationComments($data: GetPublicationCommentsInput!) {
+  subscribeToPublicationComments(data: $data) {
+    id
+    userId
+    comment
+  }
+}
