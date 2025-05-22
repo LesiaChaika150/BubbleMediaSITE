@@ -1,7 +1,6 @@
 # Site
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
-
+<img src="./images/logo1.png" width="45" alt="Мій логотип">
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
 
 [Learn more about this workspace setup and its capabilities](https://nx.dev/tutorials/2-react-monorepo/1r-introduction/1-welcome?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
