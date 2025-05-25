@@ -1,11 +1,10 @@
 # Site
 
 <img src="./images/logo1.png" width="45" alt="Мій логотип">
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+✨ Вітаю у репозиторії сайту проекту фото/відео/аудіо хостингу ✨.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/tutorials/2-react-monorepo/1r-introduction/1-welcome?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Finish your remote caching setup
+[Натисніть щоб переглянути репозиторій API](https://github.com/KharchenkoYaroslav/BubbleMediaAPI) 
+## Короткий опис
 
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/38w09I3U2Y)
 
