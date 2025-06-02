@@ -16,6 +16,8 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom"]
   }
 }

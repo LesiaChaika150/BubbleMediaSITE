@@ -1,51 +1,40 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Recommendations from "./pages/Recommendations";
+import Create from "./pages/Create";
+import Saved from "./pages/Saved";
+import Subscriptions from "./pages/Subscriptions";
+import Profile from "./pages/Profile";
+import ProfileSettings from "./pages/ProfileSettings";
+import Authentication from "./pages/Authentication";
+import MainLayout from "./components/MainLayout";
+import { JSX } from "react";
 
-import { Route, Routes, Link } from 'react-router-dom';
+// Компонент захищеного маршруту
+const PrivateRoute = ({ element }: { element: JSX.Element }) => {
+  const isAuthenticated = !!localStorage.getItem("authenticatedUser");
+  return isAuthenticated ? element : <Navigate to="/" replace />;
+};
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="site" />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
-      </div>
+    <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
+        {/* Сторінка авторизації без лейаута */}
+        <Route path="/" element={<Authentication />} />
+
+        {/* Усі інші сторінки з MainLayout */}
+        <Route element={<MainLayout />}>
+          <Route path="/demo" element={<PrivateRoute element={<Recommendations />} />} />
+          <Route path="/home" element={<PrivateRoute element={<Recommendations />} />} />
+          <Route path="/recommendations" element={<PrivateRoute element={<Recommendations />} />} />
+          <Route path="/create" element={<PrivateRoute element={<Create />} />} />
+          <Route path="/saved" element={<PrivateRoute element={<Saved />} />} />
+          <Route path="/subscriptions" element={<PrivateRoute element={<Subscriptions />} />} />
+          <Route path="/profile" element={<PrivateRoute element={<Profile />} />} />
+          <Route path="/profile/settings" element={<PrivateRoute element={<ProfileSettings />} />} />
+        </Route>
       </Routes>
-      {/* END: routes */}
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -4,5 +4,8 @@
   "private": true,
   "nx": {
     "name": "site"
+  },
+  "dependencies": {
+    "apollo-upload-client": "^18.0.1"
   }
 }

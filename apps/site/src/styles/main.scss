@@ -1,0 +1,73 @@
+$primary: #3fd2e2;
+$primary-dark: #1ba7bd;
+$background: #f4fcfd;
+$text: #333;
+
+body {
+  background-color: $background;
+  font-family: "Segoe UI", sans-serif;
+  color: $text;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: $primary;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-details h2 {
+  margin: 0;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
